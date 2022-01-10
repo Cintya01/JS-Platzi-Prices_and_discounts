@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Porcentajes y descuentos</title>
 </head>
 <body>
-    <header>
+    <header class="flex">
         <h1>Porcentajes y descuentos</h1>
-        <p>Este es el segundo taller del curso práctico de JS</p>
+        <span>Este es el segundo taller del curso práctico de JS</span>
     </header>
-    <section>
+    <section class="flex">
+        <div class="container"> 
          <h2>Calcula el precio a pagar de tus productos con descuento</h2>
-        <form action="/">
+        <form class="form-cont">
             <label for="InputPrice">Precio del producto</label>
-            <input id="InputPrice" type="number">
+            <input class="input-cont" id="InputPrice" type="number">
 
             <label for="InputDiscount">Descuento del producto</label>
-            <input id="InputDiscount" type="number">
+            <input  class="input-cont" id="InputDiscount" type="number">
 
             <button type="button" onclick="finalPriceBtn()">Precio Final</button>
             <p id="finalPrice"></p>
         </form>
+         </div>
     </section>
 
     <script src="./descuentos.js"></script>
